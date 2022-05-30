@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="incomingix.css" type="text/css">
+    <link rel="shortcut icon" href="/preload/Repositorypl/icons/timing_bomb.ico" type="image/x-icon">
+    <title>Coming Soon. . .</title>
+</head>
+<body>
+    <div class="bodycover">
+        <div class="bodylighter">
+            
+            <!-- <h3 class="bl3"></h3> -->
+            <div class="toppar">
+                <!-- <div class="toppareditor">Hold Up</div> -->
+                <img src="/preload/Repositorypl/images/Stop-Sign-pic-bg.jpg" alt="stopsignimage">
+                <h3 class="incoming">SITE UNDER <br> CONSTRUCTION</h3>
+                <h2 class="says">WE'RE <span>LAUNCHING</span> SOON!!</h2>
+                <span class="gradient"></span>
+                <div class="imgdrop">
+                    <img class="drop" src="/preload/Repositorypl/images/drop-image.png" alt="drop-image">
+                </div>
+                
+            </div>
+            <!-- <hr> -->
+            <div class="counterpart">
+                
+                <p id="demo"></p>
+                <script>
+
+                    var countDownDate = new Date("Jun 13, 2022 15:30:00").getTime();
+
+                    var countdownfunction = setInterval(function() {
+
+                    var now = new Date().getTime();
+                    
+                    var distance = countDownDate - now;
+                    
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                    document.getElementById("demo").innerHTML = days + "Days " + hours + "Hours "
+                    + minutes + "Min " + seconds + "Sec ";
+
+                    // soon as my site is done it'll start the launch
+                    if (distance < 0) {
+                        clearInterval(countdownfunction);
+                        document.getElementById("demo").innerHTML = "Redirecting to Site. . . .";
+                    }
+                
+                    }, 1000);
+                    
+                </script>
+            </div>
+            <br class="extra">
+            <div class="extrainfo">
+                <p>
+                    I guess We all have to keep calm at some point! 😉
+                </p>
+            </div>
+    </div>
+</body>
+</html>

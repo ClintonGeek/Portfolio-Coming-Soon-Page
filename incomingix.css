@@ -1,0 +1,295 @@
+
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+.bodycover{
+    background-image: url("/preload/Repositorypl/images/wavy_ocean_pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    color : goldenrod;
+}
+.bodylighter{
+    border-radius: 0% 0% 0% 0%;
+    height: 100vh;
+    width: 99%;
+    position: absolute;
+    left: .5%;
+    right: auto;
+    top: 0;
+    background-color: black;
+    opacity: .7;
+    /* outline: 1.5px solid gold; */
+    outline-offset: -1px;
+    /* border: .5px solid greenyellow; */
+}
+.toppar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 5%;
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1px;
+    /* border: 2px solid blueviolet; */
+    /* outline-offset: 5px; */      
+    line-height: 30px;
+}
+.toppar h3{
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 20px;
+    position: relative;
+    top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.toppar h2{
+    font-size: 1.4em;
+    line-height: 30px;
+    font-weight: 550;
+    position: relative;
+    top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+}
+.toppar h2 span{
+    font-weight: 300;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: brightness(300%);
+    
+}
+.toppar h2 span::before{
+    content: 'LAUNCHING';
+    position: absolute;
+    mix-blend-mode: difference;
+    font-weight: 350;
+    transform: translateX(-1%);
+    filter: blur(2.5px);
+    background: #000;
+    opacity: .7;
+}
+.toppar h2 .gradient{
+    background:  rgb(61, 16, 222);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+.imgdrop{
+    width: 90%;
+    height: 25vh;
+    /* border: 1px solid red; */
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5%;
+    
+}
+.imgdrop .drop{
+    width: 2em;
+    height: 3.5em;
+    opacity: .5;
+    position: relative;
+    animation: drop 2.5s linear infinite;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes drop {
+    0%{
+        opacity: 1;
+        top: 0%;
+    }
+    70%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 0;
+        top: 70%;
+    }
+    
+}
+.toppar img{
+    height: 4em;
+    width: 4em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5%;
+}
+hr{
+    width: 80%;
+    top: 60%;
+    position: relative;
+}
+.counterpart{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: 0%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    font-weight: 450;
+    text-align: center;
+    color: ghostwhite;
+    /* border: 2px solid lightblue; */
+    font-size: 1.3em;
+}
+.extrainfo{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative; 
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    font-size: .8em;
+    text-align: center;
+    color: ghostwhite;
+    top: 4.5%;
+    /* border: 2px solid darksalmon; */
+    
+}
+@media screen and (min-width: 414px) and (max-width: 600px) {
+    .toppar img{
+    height: 4.8em;
+    width: 4.8em;
+    margin-top: 3%;
+    }
+    .toppar h3{
+        font-size: 1.25em;
+    }
+    .toppar h2{
+        font-size: 1.6em;
+    }
+    .counterpart{
+        font-size: 1.4em;
+    }
+    .extrainfo{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 770px) {
+    .toppar img{
+    height: 5.1em;
+    width: 5.1em;
+    margin-top: 3%;
+    }
+    .toppar h3{
+        font-size: 1.3em;
+    }
+    .toppar h2{
+        font-size: 1.8em;
+    }
+    .counterpart{
+        font-size: 1.6em;
+    }
+    .extrainfo{
+        font-size: 1.1em;
+        top: 1%;
+    }
+    .extra br{
+        display: none;
+    }
+}
+@media screen and (min-width: 771px) and (max-width: 1024px) {
+    .imgdrop .drop{
+    width: 2.5em;
+    height: 4em;
+    }
+    .toppar img{
+    height: 5.7em;
+    width: 5.7em;
+    margin-top: 2%;
+    }
+    .toppar h3{
+        font-size: 1.8em;
+        line-height: 100%;
+    }
+    .toppar h2{
+        font-size: 2.4em;
+    }
+    .counterpart{
+        font-size: 2em;
+    }
+    .extrainfo{
+        font-size: 1.5em;
+        top: 1%;
+    }
+    .extra br{
+        display: none;
+    }
+}
+/* *********************** */
+@media screen and (min-width: 1025px) and (max-width: 1539px) {
+    .imgdrop .drop{
+    width: 2.3em;
+    height: 3.8em;
+    }
+    .toppar img{
+    height: 7em;
+    width: 7em;
+    margin-top: 1%;
+    }
+    .toppar h3{
+        font-size: 1.6em;
+        line-height: 100%;
+        margin-top: .2%;
+    }
+    .toppar h2{
+        font-size: 2.3em;
+    }
+    .counterpart{
+        font-size: 2.1em;
+        margin-top: -1%;
+    }
+    .extrainfo{
+        font-size: 1.7em;
+        margin-top: -5%;
+    }
+    .extra br{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 1540px){
+    .imgdrop .drop{
+    width: 5.2em;
+    height: 8em;
+    }
+    .toppar img{
+    height: 12.5em;
+    width: 12.5em;
+    margin-top: 2%;
+    }
+    .toppar h3{
+        font-size: 4.1em;
+        line-height: 100%;
+    }
+    .toppar h2{
+        font-size: 6.5em;
+    }
+    .counterpart{
+        font-size: 7em;
+    }
+    .extrainfo{
+        font-size: 3.2em;
+        top: 2%;
+    }
+}
